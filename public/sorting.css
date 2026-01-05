@@ -1,0 +1,87 @@
+/* Page background */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: linear-gradient(135deg, #f0f4f8, #dbeafe);
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Heading */
+h1 {
+    color: #1e40af;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+/* Controls */
+.controls {
+    margin: 15px 0;
+}
+
+input {
+    padding: 8px 12px;
+    width: 300px;
+    border-radius: 8px;
+    border: 1px solid #94a3b8;
+    font-size: 1rem;
+}
+
+button {
+    padding: 10px 18px;
+    margin: 5px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(45deg,#2563eb,#60a5fa);
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Stats */
+.stats {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1e3a8a;
+}
+
+/* Array container — CENTERED */
+.array-container {
+    display: flex;
+    justify-content: center;   /* ✅ CENTER GRAPH */
+    align-items: flex-end;
+    height: 350px;
+    margin-top: 30px;
+    gap: 6px;
+    border: 2px solid #94a3b8;
+    padding: 15px;
+    background: white;
+    border-radius: 15px;
+    overflow-x: auto;
+}
+
+/* Individual bars */
+.array-box {
+    width: 40px;
+
+    /* ✅ CENTER NUMBER INSIDE BAR */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    color: white;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+/* Colors */
+.array-box.default { background: #3b82f6; }
+.array-box.red { background: #ef4444; }
+.array-box.green { background: #22c55e; }

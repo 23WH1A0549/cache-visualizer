@@ -1,19 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>LRU Cache – Simple Visualization</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>LRU Cache Visualizer</title>
+    <link rel="stylesheet" href="lru.css">
 </head>
 <body>
 
 <h1>LRU Cache Visualization</h1>
-<br>
-<br>
 
 <div class="controls">
     <input id="capacityInput" type="number" placeholder="Cache Capacity">
-    <button onclick="setCapacity()">Set</button>
-    <button onclick="reset()">Reset</button>
+    <button onclick="setCapacity()">Set Capacity</button>
+    <button onclick="reset()">Reset Cache</button>
 </div>
 <br>
 <br>
@@ -29,22 +28,11 @@
     🔴 Hits: <span id="hits">0</span>
     🔵 Misses: <span id="misses">0</span>
 </div>
-<br>
-<br>
 
-
-<!--<h3>Cache Boxes (Left = OLD | Right = NEW)</h3>-->
-
-<div class="labels">
-    <span>LRU (Old)</span><span></span>
-    <span>➡️</span>
-    <span>MRU (New)</span>
-</div>
-
-<div id="cache" class="cache"></div>
+<div id="cache" class="cache-container"></div>
 
 <p id="message"></p>
 
-<script src="script.js"></script>
+<script src="lru.js"></script>
 </body>
 </html>

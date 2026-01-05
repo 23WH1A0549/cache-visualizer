@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorting Algorithms Visualizer</title>
+    <link rel="stylesheet" href="sorting.css">
+</head>
+<body>
+
+<h1>Sorting Algorithms Visualizer</h1>
+
+<div class="controls">
+    <input id="arrayInput" placeholder="Enter numbers separated by commas">
+    <button onclick="displayArray()">Display Array</button>
+</div>
+
+<div class="controls">
+    <button onclick="bubbleSort()">Bubble Sort</button>
+    <button onclick="selectionSort()">Selection Sort</button>
+    <button onclick="insertionSort()">Insertion Sort</button>
+    <button onclick="mergeSortWrapper()">Merge Sort</button>
+    <button onclick="quickSortWrapper()">Quick Sort</button>
+</div>
+
+<div class="stats">
+    Comparisons: <span id="comparisons">0</span>
+     Swaps: <span id="swaps">0</span>
+</div>
+
+<div id="arrayDiv" class="array-container"></div>
+
+<script src="sorting.js"></script>
+</body>
+</html>
